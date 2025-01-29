@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ILoansSimulateService, LoansSimulateService>();
 builder.Services.AddScoped<IPropostaRepository, PropostaRepository>();
+builder.Services.AddScoped<IPaymentFlowSummaryRepository, PaymentFlowSummaryRepository>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
